@@ -1,5 +1,5 @@
 const Banner = () => (
-  <>
+  <div className="flex items-center justify-between border-y border-black bg-yellow-400 py-10 lg:py-0">
     <div className="space-y-5 px-10">
       <h1 className="max-w-xl font-serif text-6xl">
         <span className="underline decoration-black decoration-4">Medium</span>{' '}
@@ -11,8 +11,14 @@ const Banner = () => (
       </h2>
     </div>
 
-    <div></div>
-  </>
+    <div>
+      <img
+        className="hidden h-32 md:inline-flex lg:h-full"
+        src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
+        alt="medium logo"
+      />
+    </div>
+  </div>
 )
 
 export default Banner
